@@ -12,15 +12,16 @@ echo "🎬 artisan commands"
 
 # 💡 Group into a custom command e.g. php artisan app:on-deploy
 
-php artisan migrate
+# php artisan migrate --force
 
-# php artisan migrate --no-interaction --force
+php artisan migrate --no-interaction --force
 
 php artisan db:seed
 
+php artisan passport:client --password
+
 php artisan route:clear
 
-php artisan passport:client --password
 
 echo "🎬 start supervisord"
 
