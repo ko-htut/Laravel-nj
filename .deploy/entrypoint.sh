@@ -16,12 +16,11 @@ echo "🎬 artisan commands"
 
 php artisan migrate --no-interaction --force
 
-php artisan db:seed
-
-php artisan passport:client --password
+php artisan db:seed --force
 
 php artisan route:clear
 
+php artisan passport:client --password
 
 echo "🎬 start supervisord"
 
